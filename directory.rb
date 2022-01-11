@@ -19,9 +19,10 @@ def print_header
   puts "-------------"
 end
 
+# Prefix student with a number to identify the position in the array
 def print(students)
-    students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    students.each.with_index(1) do |student, index|
+    puts "#{index}. #{student[:name]} (#{student[:cohort]} cohort)"
   end
 end
 
