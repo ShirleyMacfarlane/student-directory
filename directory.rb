@@ -1,6 +1,6 @@
 def input_students
   puts "Please enter the names of the students"
-  puts "To finish, just hit return twicwe"
+  puts "To finish, just hit return twice"
   #create an empty array"
   students = []
   name = gets.chomp 
