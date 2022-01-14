@@ -32,7 +32,7 @@ def hobbies
 end
 
 def country_of_birth
-  #Enter the student's hobbies
+  #Enter the student's coutry of birth
   puts "Please enter the country of birth for this student" 
   birth_country = gets.chomp
   birth_country = "None entered " if birth_country == ""
@@ -48,11 +48,11 @@ end
 def print(students)
   students.each.with_index(1) do |student, index|
     if student[:hobby].length == 0
-      puts "#{index}. #{student[:name].center(20)} (#{student[:cohort].to_s.center(12)} cohort) (country of birth: #{student[:country_of_birth].center(15)}) (No hobby entered)"
+      puts "#{index}. #{student[:name].center(20)} (#{student[:cohort].to_s.center(12)} cohort) (country of birth: #{student[:country_of_birth].center(18)}) (No hobby entered)"
     elsif student[:hobby].length == 1
-      puts "#{index}. #{student[:name].center(20)} (#{student[:cohort].to_s.center(12)} cohort) (country of birth: #{student[:country_of_birth].center(15)}) (hobby: #{student[:hobby].join(",")})"
+      puts "#{index}. #{student[:name].center(20)} (#{student[:cohort].to_s.center(12)} cohort) (country of birth: #{student[:country_of_birth].center(18)}) (hobby: #{student[:hobby].join(",")})"
     else
-      puts "#{index}. #{student[:name].center(20)} (#{student[:cohort].to_s.center(12)} cohort) (country of birth: #{student[:country_of_birth].center(15)}) (hobbies: #{student[:hobby].join(",")})"
+      puts "#{index}. #{student[:name].center(20)} (#{student[:cohort].to_s.center(12)} cohort) (country of birth: #{student[:country_of_birth].center(18)}) (hobbies: #{student[:hobby].join(",")})"
     end
   end
 end
